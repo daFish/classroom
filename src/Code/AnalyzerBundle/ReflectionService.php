@@ -122,8 +122,7 @@ class ReflectionService
 
         $classes = $namespace->getClasses();
 
-        if (!count($classes))
-        {
+        if (!count($classes)) {
             return null;
         }
 
@@ -143,6 +142,10 @@ class ReflectionService
     {
         $namespace = $this->extractNamespaceFromFile($fileName);
 
+        if (!$namespace) {
+            return null;
+        }
+
         return $namespace->getName();
     }
 
@@ -159,8 +162,7 @@ class ReflectionService
         $file = $this->getFile($fileName);
         $namespaces = $file->getNamespaces();
 
-        if (!count($namespaces))
-        {
+        if (!count($namespaces)) {
             return null;
         }
 
