@@ -1,5 +1,5 @@
 {
-    "hash": "2ec5b6bddd4912776f6a60af604901f7",
+    "hash": "c4ec5d990a7496e55c3ccd2a7b3fc6e2",
     "packages": [
         {
             "name": "andrewsville/php-token-reflection",
@@ -318,6 +318,48 @@
                 "orm"
             ],
             "time": "2013-01-07 20:05:04"
+        },
+        {
+            "name": "hipchat/hipchat-php",
+            "version": "v1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hipchat/hipchat-php.git",
+                "reference": "v1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/hipchat/hipchat-php/archive/v1.2.zip",
+                "reference": "v1.2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "HipChat": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "HipChat",
+                    "email": "support@hipchat.com",
+                    "homepage": "https://www.hipchat.com",
+                    "role": "Company"
+                }
+            ],
+            "description": "PHP library for HipChat",
+            "homepage": "http://github.com/hipchat/hipchat-php",
+            "keywords": [
+                "hipchat"
+            ],
+            "time": "2012-11-30 16:47:14"
         },
         {
             "name": "jdorn/sql-formatter",

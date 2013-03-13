@@ -90,5 +90,10 @@ class BuildCommand extends ContainerAwareCommand
 
         $buildWriter->write($build);
         $projectWriter->write($project);
+
+$token = '0b9fb9066ebb5fc586c94c1f7cc48c';
+$hc = new \HipChat\HipChat($token);
+$hc->message_room('bamboo', 'Code', 'Build ' . $build->getVersion() . ' for Project ' . $project->getName() . ' completed.');
+
     }
 }
